@@ -3,14 +3,14 @@ const fs = require('fs');
 fs.readFile('old.cfg', 'utf8', (err, data) => {
     if (err) throw err;
     data = data.replace(/[\r<>\"]/gim, '');
-    let lines = data.split('\n');
+    const lines = data.split('\n');
 
     let block = '';
     let family = '';
     let maxnb = 0;
     let newData = [];
 
-    for (let line of lines) {
+    for (const line of lines) {
         if (line.charAt(0) == '#') {
             newData.push(line);
             continue;

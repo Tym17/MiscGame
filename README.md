@@ -1,2 +1,2 @@
-# NoTimeForFarm
-Collection of small CraftTweaker scripts to speed up gameplay.
+# MiscGame
+Collection of utility scripts used to create configuration or help gameplay.
